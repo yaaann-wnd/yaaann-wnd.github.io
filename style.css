@@ -102,7 +102,7 @@ html, body {
     height: 5px;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-device-width: 740px){
     .welcome {
         display: flex;
         height: 70vh;
