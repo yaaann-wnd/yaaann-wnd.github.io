@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Viga', sans-serif;
+}
+
+.bg-dark {
+    background: rgb(255, 0, 232);
+    background: linear-gradient(90deg, rgba(255, 0, 232, 1) 0%, rgba(131, 16, 213, 1) 0%, rgba(255, 0, 224, 1) 100%);
+}
+
+.navbar-brand {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.bruh {
+    transition: 0.4s;
+}
+
+.bruh:hover{
+    color: rgb(170, 29, 170) !important;
+}
+
+.icon {
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    color: rgb(170, 29, 170) !important;
+}
+
+.welcome {
+    background: rgba(0, 0, 0, 0.575) url(bootstrap/img/banner.jpg);
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Alliance No.1';
+    font-size: 60px;
+}
+
+.header2 {
+    font-family: 'Alliance No.1';
+    font-size: 60px;    
+    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(255, 85, 212, 1) 0%, rgba(186, 83, 255, 1) 100%);     
+    -webkit-background-clip: text;
+    background-clip: text;     
+    -webkit-text-fill-color: transparent;
+}
+
+.foto {
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.hr-port {
+    background: rgb(255, 0, 232);
+    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(255, 85, 212, 1) 0%, rgba(186, 83, 255, 1) 100%);
+    height: 5px;
+}
+
+.baris-1 img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.baris-2 img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.about-wrapper {
+    box-sizing: border-box;
+    background: rgb(255, 0, 232);
+    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(96, 34, 138, 1) 0%, rgba(185, 17, 142, 1) 100%);
+}
+
+.content p {
+    font-size: 0.85em;
+}
+
+.hr-about {
+    background: rgb(255, 0, 232);
+    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(255, 85, 212, 1) 0%, rgba(186, 83, 255, 1) 100%);
+    height: 5px;
+}
+
+@media only screen and (max-device-width: 480px){
+    .welcome {
+        display: flex;
+        height: 70vh;
+    }
+
+    .welcome-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw !important;
+        position: relative;
+    }
+    
+    /* foto */
+    .foto {
+        width: 100px;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    /* end of foto */
+
+    .header, .header2 {
+        font-size: 27px;
+    }
+    
+    .desc {
+        margin-left: 0 !important;
+        width: 100vw !important;
+        padding-top: 20px;
+    }
+    
+    .detail {
+        position: absolute;
+        top: 61%;
+        left: 0;
+        padding: 0 10px;
+    }
+}
