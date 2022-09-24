@@ -142,4 +142,8 @@ html, body {
         left: 0;
         padding: 0 10px;
     }
+
+    .map {
+        width: 300px;
+    }
 }
