@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Viga', sans-serif;
@@ -20,7 +21,7 @@ html, body {
     transition: 0.4s;
 }
 
-.bruh:hover{
+.bruh:hover {
     color: rgb(170, 29, 170) !important;
 }
 
@@ -57,10 +58,10 @@ html, body {
 
 .header2 {
     font-family: 'Alliance No.1';
-    font-size: 60px;    
-    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(255, 85, 212, 1) 0%, rgba(186, 83, 255, 1) 100%);     
+    font-size: 60px;
+    background: linear-gradient(160deg, rgba(255, 0, 232, 1) 0%, rgba(255, 85, 212, 1) 0%, rgba(186, 83, 255, 1) 100%);
     -webkit-background-clip: text;
-    background-clip: text;     
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -102,7 +103,7 @@ html, body {
     height: 5px;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .welcome {
         height: 70vh;
     }
@@ -110,45 +111,93 @@ html, body {
     .welcome-content {
         height: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw !important;
-        position: relative;
     }
-    
+
     /* foto */
     .foto {
         width: 100px;
-        border-radius: 10px;
+        border-radius: 50%px;
         margin-right: 15px;
     }
+
     /* end of foto */
 
-    .header, .header2 {
-        font-size: 27px;
+    .header,
+    .header2 {
+        text-align: center;
+        font-size: 35px;
     }
-    
+
+    .header2 {
+        margin-top: -10px;
+    }
+
 
     /* deskripsi */
     .desc {
-        margin-left: 0 !important;
+        margin: -10px 0 0 !important;
         width: 100vw !important;
         padding-top: 20px;
     }
-    
-    /* .detail {
-        position: absolute;
-        top: 61%;
-        left: 0;
-        padding: 0 10px;
-    } */
 
-    .map {
-        width: 300px;
+    .detail {
+        padding: 0 30px 0 30px;
+    }
+
+    .detail h5 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    
+    .baris-1, .baris-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .baris-1 img, .baris-2 img {
+        margin: 5px;
         width: 140px;
+    }
+
+    .about-wrapper, .container.px-4 {
+        padding: 30px 0 !important;
+    }
+
+    .container .content {
+        width: 90% !important;
+    }
+
+    .hr-about, .hr-port {
+        width: 40% !important;
+    }
+
+    #contact {
+        margin: 20px 0 ;
+        padding: 20px 20px !important;
+    }
+    
+    .contact-wrapper {
+        border-radius: 10px !important;
+        flex-direction: column;
+    }
+
+    .form-bungkus {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    .form-bungkus .mb-3 {
+        width: 100%;
+    }
+    
+    .map {
+        width: 100%;
+        border-radius: 20px !important;
     }
 }
