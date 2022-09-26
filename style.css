@@ -40,10 +40,10 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
-    display: flex;
 }
 
 .welcome-content {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,14 +104,15 @@ html, body {
 
 @media screen and (max-width: 576px){
     .welcome {
-        display: flex;
         height: 70vh;
     }
 
     .welcome-content {
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         width: 100vw !important;
         position: relative;
     }
@@ -136,18 +137,18 @@ html, body {
         padding-top: 20px;
     }
     
-    .detail {
+    /* .detail {
         position: absolute;
         top: 61%;
         left: 0;
         padding: 0 10px;
-    }
+    } */
 
     .map {
         width: 300px;
     }
 
-    .baris-1 img, .baris-1 img {
+    .baris-1 img, .baris-2 img {
         width: 140px;
     }
 }
